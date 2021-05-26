@@ -107,7 +107,7 @@ if __name__=='__main__':
             newMessage = caesarDecrypt(message)
 
     # write result to new file
-    with open(args.output,"a") as f_out:
+    with open(args.output,"w") as f_out:
         for line in newMessage:
             f_out.write(line)
 
