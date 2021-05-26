@@ -1,15 +1,16 @@
 import sys
 
 def rotXencrypt(message, shift):
-    for i in range(1, len(message)):
-        encodedString = ""
-        for c in message[i]:
-            encoded = c
-            if c.isalpha():
-              encoded = chr((ord(c) + shift -87) % 26 + 97)
-            encodedString += encoded
-        shifted.append(encodedString)
-    return shifted
+    newMessage = []
+    for line in message:
+        newLine = ""
+        for currentChar in line:
+            newChar = currentChar
+            if currentChar.isalpha():
+              newChar = chr((ord(currentChar) + shift -87) % 26 + 97)
+            newLine += newChar
+        newMessage.append(newLine)
+    return newMessage
 
 def rotXdecrypt(message, shift):
     return rotXencrypt(message, -shift)
