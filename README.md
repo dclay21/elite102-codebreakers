@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-- [Description](#Description)
-- [How to Use](#How To Use)
+- [Description](#description)
+
+- [How to Use](#how-to-use)
+   - [Command Line Arguments](#command-line-arguments)
 
 ## Description
 This program utilizes Python to encrypt/decrypt user-specified text files according to one of the three ciphers listed:
